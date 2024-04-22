@@ -93,7 +93,7 @@ public class Main {
         for (int i = 0; i < Books.length ; i++) {
             //print out all the books and their information:
 
-            //System.out.printf("%d \n",Books.getid,Books.getisbn,Books.title,Books.checkedOutTo,Books.isCheckedOut);
+           // System.out.printf("%d, %s, %s, %d, %s \n",Books.getid,Books.getisbn,Books.title,Books.checkedOutTo,Books.isCheckedOut);
 
         }
         System.out.println();
@@ -127,7 +127,7 @@ public class Main {
         System.out.println();
         // Change Book checked out as true instead of false and list name of who checked it out.
 
-        //if (userInput.nextInt() == booksInLibrary.getid){booksInLibrary.getisCheckedOut == true}
+       // if (userInput.nextInt() == booksInLibrary){books.getisCheckedOut == true}
         // userInput.next() == booksInLibrary.getcheckedOutTo
     }
 

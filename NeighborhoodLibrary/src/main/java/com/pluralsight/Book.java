@@ -1,6 +1,6 @@
 package com.pluralsight;
 
-public class books {
+public class Book {
     //private variables
     private int id;
     private String isbn;
@@ -9,7 +9,7 @@ public class books {
     private String checkedOutTo;
 
     // Constructors
-    public books(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo){
+    public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo){
         this.id = id;
         this.isbn = isbn;
         this.title = title;
@@ -32,6 +32,13 @@ public class books {
     public boolean isCheckedOut() {return isCheckedOut;}
     public void setCheckedOut(boolean checkedOut) {isCheckedOut = checkedOut;}
 
-
+    public void checkOut(String name){
+        isCheckedOut = true;
+        checkedOutTo = name;
+    }
+    public void checkIn(String name){
+        isCheckedOut =false;
+        checkedOutTo = name;
+    }
 
 }

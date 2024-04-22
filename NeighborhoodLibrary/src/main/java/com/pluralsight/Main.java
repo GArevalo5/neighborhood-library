@@ -115,7 +115,6 @@ public class Main {
             Book book = books[i];
 
             System.out.printf("%d,%s ,%s ,%s \n",book.getId(),book.getIsbn(),book.getTitle(), book.getCheckedOutTo() );
-
         }
 
         //ask user if they would like to check out a book that's available
@@ -157,11 +156,13 @@ public class Main {
             int bookID = userInput.nextInt();
             userInput.nextLine();
             System.out.println();
-            System.out.println("Please enter --- to erase your name: ");
+            System.out.println("Please press the space bar to erase your name: ");
             String name = userInput.nextLine();
+
             // Change book checked out status to false again and erase username on who checked it out.
             if (bookID == book.getId()){
                 book.checkIn(name);}
+            System.out.println("Thank you for returning the book!");
             return;
 
         }
